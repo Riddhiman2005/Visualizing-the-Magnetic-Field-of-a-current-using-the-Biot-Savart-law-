@@ -4,14 +4,7 @@ import matplotlib.pyplot as plt
 
 def plot_parallel_wires(I_1, x_c1, y_c1, I_2, x_c2, y_c2):
   
-  # a) For Two parallel Wires carrying current in the same direction, then
   
-  plot_parallel_wires(1.0, -1.0, 0.0, 1.0, 1.0, 0.0)
-  
-  
-  # b) For Two Parallel Wires Carrying Current in Opposite Directions, then
-  
-  plot_parallel_wires(1.0, -1.0, 0.0, -1.0, 1.0, 0.0)
   
   
   
@@ -51,6 +44,15 @@ def plot_parallel_wires(I_1, x_c1, y_c1, I_2, x_c2, y_c2):
     # Show the plot
     
     plt.show()
+    
+    # a) For Two parallel Wires carrying current in the same direction, then
+  
+  plot_parallel_wires(1.0, -1.0, 0.0, 1.0, 1.0, 0.0)
+  
+  
+  # b) For Two Parallel Wires Carrying Current in Opposite Directions, then
+  
+  plot_parallel_wires(1.0, -1.0, 0.0, -1.0, 1.0, 0.0)
 
     
     # Plot Generated in case of of Two parallel Wires carrying current in the same direction will be different from two parallel Wires carrying current in the opposite direction.
