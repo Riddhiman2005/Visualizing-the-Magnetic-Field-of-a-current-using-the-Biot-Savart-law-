@@ -18,5 +18,5 @@
  
  ![image](https://github.com/Riddhiman2005/Visualizing-the-Magnetic-Field-of-a-current-using-the-Biot-Savart-law-/assets/130882317/7ce2a2fa-6cb1-4714-b695-027833575f8b)
 
- where B is the magnetic field vector at a point r, μ₀ is the permeability of free space, I is the current in the wire,
- dl is an infinitesimal length element of the wire, r’ is the vector from the length element to the point r, and the integral is taken over the entire wire C
+ where **B** is the **magnetic field vector at a point r**, **μ₀** is the **permeability of free space**, **I** is the **current in the wire**,
+ **dl** is an **infinitesimal length element of the wire**, **r’** is the **vector from the length element to the point r**, and the integral is taken over the entire wire C
