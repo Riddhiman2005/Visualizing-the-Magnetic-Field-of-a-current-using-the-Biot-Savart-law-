@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Define the current strength and location
+
 I = 1.0  # strength of I
 x_c = 0.0  # x-coordinate of I (Ix)
 y_c = 0.0  # y-coordinate of I (Iy)
