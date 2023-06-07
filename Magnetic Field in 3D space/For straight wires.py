@@ -8,6 +8,7 @@ from mpl_toolkits.mplot3d import Axes3D
 mu0 = 4 * np.pi * 10**-7  # Vacuum permeability
 
 # Function to calculate magnetic field at a point due to a current-carrying wire
+
 def magnetic_field_wire(I, r0, dl, r):
     r_vector = r - r0
     dl_cross_r = np.cross(dl, r_vector)
