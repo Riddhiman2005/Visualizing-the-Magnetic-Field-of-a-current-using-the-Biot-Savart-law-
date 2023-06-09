@@ -4,6 +4,7 @@ After running the codes, I got some interesting results.
  ## For the parallel wires carrying current in the same direction ##
 
 
+![image](https://github.com/Riddhiman2005/Visualizing-the-Magnetic-Field-of-a-current-using-the-Biot-Savart-law-/assets/130882317/ec4ff94e-13b6-4bab-b9fc-03b1cfaa0930)
 
 
 
