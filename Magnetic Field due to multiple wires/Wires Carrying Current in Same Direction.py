@@ -1,15 +1,11 @@
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plot_parallel_wires(I_1, I_2, x_c1, x_c2, y_c1, y_c2):
-    
+def plot_parallel_wires(I_1, x_c1, y_c1, I_2, x_c2, y_c2):
     # Define the mesh grid of points
-    
     x, y = np.meshgrid(np.linspace(-2, 2, 200), np.linspace(-2, 2, 200))
 
-    # Define the magnetic field components due to the currents
+    # Defining the magnetic field components due to the currents
     
     r1 = np.sqrt((x-x_c1)**2 + (y-y_c1)**2)
     B_x1 = I_1 * (y-y_c1) / r1**3
@@ -23,28 +19,24 @@ def plot_parallel_wires(I_1, I_2, x_c1, x_c2, y_c1, y_c2):
     B_y = B_y1 + B_y2
 
     # Plot the magnetic field lines
-    
     fig, ax = plt.subplots(figsize=(8, 8))
-    ax.streamplot(x, y, B_x, B_y, color='red', linewidth=1, density=1, arrowstyle='->')
+    ax.streamplot(x, y, B_x, B_y, color='blue', linewidth=1, density=1, arrowstyle='->')
 
-    # Add the wires
-    
-    circle = plt.Circle((x_c1, y_c1), 0.1, color='green')
-    ax.add_patch(circle)
-    circle = plt.Circle((x_c2, y_c2), 0.1, color='green')
-    ax.add_patch(circle)
+    # Add wires
+    circle = plt.Circle((x_c1, y_c1), 0.1, color='red')
+    ax.add_artist(circle)
+    circle = plt.Circle((x_c2, y_c2), 0.1, color='red')
+    ax.add_artist(circle)
 
     # Set the plot limits and axis labels
-    
     ax.set_xlim(-2, 2)
     ax.set_ylim(-2, 2)
     ax.set_xlabel('x')
     ax.set_ylabel('y')
 
-    # Show the plot
+    # Show plot
     
     plt.show()
 
-# For parallel Wires carrying current in same direction
-
+# For two wires with current in the same direction
 plot_parallel_wires(1.0, -1.0, 0.0, 1.0, 1.0, 0.0)
